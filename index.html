@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="main">
+
+    <div class="bar">
+      <h1 class="heading"> Timer</h1>
+    </div>
+    <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()"><i class="fa fa-bars" style="font-size: 25px;"></i></span>
+  
+    <div class="num">
+        <h1 id="m">00</h1><b style="color: white;">m</b>
+        <h1 id="s">00</h1><b style="color: white;">s</b>
+        <h1 id="ms">00</h1>
+    </div>
+    <div class="btn">
+       <button onclick="disablebtn()" id="btn1"><i class="fa fa-play-circle-o"></i></button>
+       <button onclick="stop()"><i class="fa fa-stop"></i></button>
+       <button onclick="reset()"><i class="fa fa-refresh"></i></button>
+       
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" id="icon" aria-hidden="true"></i></a>
+    <h1 class="head" >History</h1>
+    <p onclick="save(stop())" class="refresh">Refresh</p><br><br>
+    <p class="sh" >min</p>
+    <p class="sh" >sec</p>
+    <p class="sh" >milisec</p>
+    <p  id="mins"class="s" >00</p>
+    <p  id="sec" class="s" >00</p>
+    <p id="msec" class="s" >00 </p>
+  </div>
+  
+</body>
+<script src="app.js"></script>
+</html>
